@@ -1,110 +1,103 @@
-# ����jsp��ͼ��ݹ���ϵͳ
+# 基于jsp的图书馆管理系统8
 
-## 1����Ŀ����
+## 1、项目介绍
 
-����jsp��ͼ��ݹ���ϵͳ8ӵ�����ֽ�ɫ���ֱ�Ϊ����Ա��ѧ�������幦�����£�
+基于jsp的图书馆管理系统8拥有两种角色，分别为管理员和学生，具体功能如下：
 
-����Ա��ͼ��������û�������Υ�洦����Ȩ�޹�����������Ϣ�޸�
+管理员：图书管理、用户管理、违规处理、权限管理、个人信息修改
 
-ѧ��������ͼ�顢�黹ͼ�顢������ʷ��������¼��������Ϣ�޸�
-
-
-## 2����Ŀ����
-
-��˿�ܣ� Servlet��mvcģʽ��Javabean
-
-ǰ�˿�ܣ�Layui��jsp��css��JavaScript��JQuery
-
-## 3����������
-
-- JAVA�汾��JDK1.8�������汾�����Ͽ���
-- IDE���ͣ�IDEA��Eclipse��Myeclipse�����ԡ��Ƽ�IDEA��Eclipse
-- tomcat�汾��Tomcat 7.x��8.x��9.x��10.x�汾����
-- ���ݿ�汾��MySql 5.x
-- maven�汾��������
-- Ӳ��������Windows ���� Mac OS
+学生：借阅图书、归还图书、借阅历史、处罚记录、个人信息修改
 
 
-## 4�����ܽ���
+## 2、项目技术
 
-### 4.1 ��¼��ע��
+后端框架： Servlet、mvc模式、Javabean
 
-![��¼](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517000635.jpg)
+前端框架：Layui、jsp、css、JavaScript、JQuery
 
-![ע��](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517000643.jpg)
+## 3、开发环境
 
-ѧ������ͨ�����������¼��ע�ᣬע�����Զ�����ID��
-
-### 4.2 ѧ��ģ��
-
-![ѧ��-����ͼ��](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517000726.jpg)
-
-![ѧ��-������ʷ](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517000728.jpg)
-
-![ѧ��-�黹ͼ��](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517000730.jpg)
-
-![ѧ��-������¼](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517000739.jpg)
-
-![ѧ��-������Ϣ](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517000742.jpg)
-
-- ����ͼ�飺ѧ������ͨ���ؼ���ģ����ѯͼ����Ϣ��Ȼ�����ͼ�顣����ͼ��ʱ����Ҫ�жϸ�ѧ�����ѽ��ĵ�ͼ��������������3��������ʱ���ܽ��飻������δ���ɷ�����ʱ���ܽ��飻��������ȷ�Ͻ��� ��������ɽ��ġ�
-
-- �黹ͼ�飺ѧ������ͨ����Ź黹ͼ�飬�Լ��鿴��ǰ������Ϣ
-
-- ������ʷ��ѧ�����Բ鿴����ͼ����ʷ��¼��������ǰ�ѽ��ĵ�ͼ����ѹ黹��ͼ�飬��¼���ݰ�������id���鼮��Ϣ�ͽ��ĵĿ�ʼ�����Լ��������ڣ����鼮��δ�黹�����������ڡ������ʾ����δ�黹��
-
-- ������¼��ѧ�����Բ鿴�Լ���Υ���¼����������鼮��δ�������¹黹��ѧ��Ҳδ���ɷ�������ʾ��δ���ɷ��𣻷�����ʾ�������ļ�¼�ĳ���������
-
-- ������Ϣ�޸ģ�ѧ�������޸ĸ�����Ϣ�������޸����������롢�Ա𡢵绰�ȣ������û�id�����޸ġ�
+- JAVA版本：JDK1.8，其它版本理论上可以
+- IDE类型：IDEA、Eclipse、Myeclipse都可以。推荐IDEA与Eclipse
+- tomcat版本：Tomcat 7.x、8.x、9.x、10.x版本均可
+- 数据库版本：MySql 5.x
+- maven版本：无限制
+- 硬件环境：Windows 或者 Mac OS
 
 
-### 4.3 ����Աģ��
+## 4、功能介绍
 
-![����Ա-���߹���](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517001001.jpg)
+### 4.1 登录与注册
 
-![����Ա-ͼ�����](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517001004.jpg)
+![登录](https://www.codeshop.fun/Typora-Images/20220517000635.jpg)
 
-![����Ա-����ͼ��](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517001008.jpg)
+![注册](https://www.codeshop.fun/Typora-Images/20220517000643.jpg)
 
-![����Ա-Υ�洦��](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517001009.jpg)
+学生可以通过上述界面登录、注册，注册后会自动分配ID号
 
-![����Ա-Ȩ�޹���](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517001011.jpg)
+### 4.2 学生模块
 
-- ͼ�����������Ա����ͨ���ؼ���ģ����ѯͼ����Ϣ�������Զ�ͼ��������ӡ�ɾ�����޸ĵȲ���
+![学生-借阅图书](https://www.codeshop.fun/Typora-Images/20220517000726.jpg)
 
-- �û�����������Ա����ͨ��ID�ź�������ѯѧ����Ϣ������ѧ���������ӡ�ɾ�����޸ĵȲ��������������������ܱ����ã����Ե��������������������Ƴ����������������û��ĵ�¼Ȩ�ޡ�
+![学生-借阅历史](https://www.codeshop.fun/Typora-Images/20220517000728.jpg)
 
-- Υ�洦��������Ա���Ը���ѧ��ID��ѯ��Υ���¼�������ɷ���û����ɷ���󣬿ɵ�������ɷ���������Ը����Ĵ������ָ����������ĺ͹黹Ȩ����
+![学生-归还图书](https://www.codeshop.fun/Typora-Images/20220517000730.jpg)
 
-- Ȩ�޹���������Ա��������������������Ƿ�������������
+![学生-处罚记录](https://www.codeshop.fun/Typora-Images/20220517000739.jpg)
 
-- ������Ϣ�޸ģ�����Ա���Ը�����Ϣ
+![学生-个人信息](https://www.codeshop.fun/Typora-Images/20220517000742.jpg)
+
+- 借阅图书：学生可以通过关键字模糊查询图书信息，然后借阅图书。借阅图书时，需要判断该学生现已借阅的图书数量，若超过3本，则暂时不能借书；若尚有未缴纳罚金，暂时不能借书；否则点击“确认借阅 ”，即完成借阅。
+
+- 归还图书：学生可以通过书号归还图书，以及查看当前借书信息
+
+- 借阅历史：学生可以查看借阅图书历史记录，包括当前已借阅的图书和已归还的图书，记录内容包括读者id、书籍信息和借阅的开始日期以及结束日期；若书籍尚未归还，“结束日期”后会显示“尚未归还”
+
+- 处罚记录：学生可以查看自己的违规记录，如若相关书籍仍未进行线下归还且学生也未缴纳罚金，则提示尚未缴纳罚金；否则显示该条借阅记录的超期天数。
+
+- 个人信息修改：学生可以修改个人信息，包括修改姓名、密码、性别、电话等，其中用户id不可修改。
 
 
-### 4.4 ��Ŀ����ĵ�Ŀ¼
+### 4.3 管理员模块
 
-![����ĵ�Ŀ¼](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220517001031.jpg)
+![管理员-读者管理](https://www.codeshop.fun/Typora-Images/20220517001001.jpg)
 
-## 5����Ƶ��ʾ
+![管理员-图书管理](https://www.codeshop.fun/Typora-Images/20220517001004.jpg)
 
-[���������Ƶ����Ƶλ���������](https://mp.weixin.qq.com/s/dEyLyDQ01HBczR1siorwoA)
+![管理员-增加图书](https://www.codeshop.fun/Typora-Images/20220517001008.jpg)
 
-## 6����ȡ��ʽ
+![管理员-违规处理](https://www.codeshop.fun/Typora-Images/20220517001009.jpg)
 
-https://mp.weixin.qq.com/s/dEyLyDQ01HBczR1siorwoA
+![管理员-权限管理](https://www.codeshop.fun/Typora-Images/20220517001011.jpg)
 
-��ע���ںţ� **����Ա������**���ظ� �� **ͼ���8**�� �����ɻ�ȡ���������Ŀ���롣
+- 图书管理：管理员可以通过关键字模糊查询图书信息，还可以对图书进行增加、删除、修改等操作
 
-![image-20220509000010316](https://project-images-1256969109.cos.ap-chongqing.myqcloud.com/Typora-Images/20220509000012.png)
+- 用户管理：管理员可以通过ID号和姓名查询学生信息，并对学生进行增加、删除、修改等操作，若“黑名单”功能被启用，可以点击“加入黑名单”、“移除黑名单”来控制用户的登录权限。
 
-## 7��������Ŀ
+- 违规处理：管理员可以根据学生ID查询其违规记录，并缴纳罚款，用户缴纳罚款后，可点击“缴纳罚款”，撤销对该生的处罚，恢复其正常借阅和归还权利；
 
-* [������ʸ�����ĿԴ��](https://mp.weixin.qq.com/s?__biz=MzkwMjM1MjM0Ng==&mid=2247483834&idx=1&sn=40517cecf36ce5d7663ed774a033fa2c&chksm=c0a79d0ff7d0141943c5d8da40b489e8ecdda5c345568776f475576506c76a954bd8238dc4f5#rd)
-* [SSM�����Ŀ](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwMjM1MjM0Ng==&action=getalbum&album_id=2387377591113859072#wechat_redirect)
+- 权限管理：管理员可以设置最长借阅天数和是否开启黑名单功能
 
-* [springboot��Ŀ](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwMjM1MjM0Ng==&action=getalbum&album_id=2387377898791223296#wechat_redirect)
+- 个人信息修改：管理员可以个人信息
 
-* [���޿����Ŀ](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwMjM1MjM0Ng==&action=getalbum&album_id=2387378317047218183#wechat_redirect)
+
+### 4.4 项目设计文档目录
+
+![设计文档目录](https://www.codeshop.fun/Typora-Images/20220517001031.jpg)
+
+
+
+## 6、获取方式
+
+
+关注公众号： **程序员王不二**，回复 “ **图书馆8**” ，即可获取完整版的项目代码。
+
+ ![](https://www.codeshop.fun/Typora-Images/202205281253739.png)
+
+
+* [springboot项目](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwMjM1MjM0Ng==&action=getalbum&album_id=2387377898791223296#wechat_redirect)
+
+* [简单无框架项目](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwMjM1MjM0Ng==&action=getalbum&album_id=2387378317047218183#wechat_redirect)
 
   
 
